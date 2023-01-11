@@ -1,15 +1,17 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ['./app/**/*.{js,ts,jsx,tsx}', './src/**/*.{js,ts,jsx,tsx}'],
+  content: [
+    './app/**/*.{js,ts,jsx,tsx}',
+    './page/**/*.{js,ts,jsx,tsx}',
+    './src/**/*.{js,ts,jsx,tsx}',
+  ],
   theme: {
     extend: {
       colors: {
-        dictionary: {
-          black: '#222831',
-          gray: '#393E46',
-          teal: '#00ADB5',
-          white: '#EEEEEE',
-        },
+        'primary-color': '#eeeeee',
+        'secondary-color': '#222831',
+        'tertiary-color': '#393e46',
+        'quaternary-color': '#00adb5',
       },
       keyframes: ({ theme }) => ({}),
     },
