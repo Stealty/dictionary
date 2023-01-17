@@ -1,5 +1,6 @@
-import '@/styles/globals.css';
+import '@/styles/globals.scss';
 import React from 'react';
+import Navigation from 'src/components/molecules/Navigation/Navigation';
 
 export default function RootLayout({
   children,
@@ -9,12 +10,13 @@ export default function RootLayout({
   return (
     <html>
       <head>
-        <title>Next.js Turbopack App Directory Playground</title>
+        <title>Dictionary</title>
       </head>
-      <body className="overflow-y-scroll">
-        <div className="grid grid-cols-[1fr,minmax(auto,240px),min(800px,100%),1fr] gap-x-8 py-8">
-          {children}
-        </div>
+      <body>
+        <header>
+          <Navigation />
+        </header>
+        <div>{children}</div>
       </body>
     </html>
   );

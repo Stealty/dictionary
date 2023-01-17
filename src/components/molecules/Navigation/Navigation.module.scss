@@ -1,18 +1,30 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@use '../../../styles/variables' as variables;
 
-* {
-  font-family: sans-serif, Arial, Helvetica;
+.navigation {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 0.5fr 1fr 0.5fr;
+  background-color: variables.$tertiary-color;
 }
 
-a {
+.navigation__list {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  list-style-type: none;
+}
+
+.navigation__listItem {
+  text-align: center;
+}
+
+.navigation__link {
   color: #18272f;
   position: relative;
   text-decoration: none;
 }
 
-a::before {
+.navigation__link::before {
   content: '';
   position: absolute;
   width: 50%;
@@ -26,7 +38,7 @@ a::before {
   transition: transform 0.3s ease-in-out;
 }
 
-a::after {
+.navigation__link::after {
   content: '';
   position: absolute;
   width: 50%;
@@ -40,12 +52,12 @@ a::after {
   transition: transform 0.3s ease-in-out;
 }
 
-a:hover::after {
+.navigation__link:hover::after {
   transform-origin: right;
   transform: scaleX(1);
 }
 
-a:hover::before {
+.navigation__link:hover::before {
   transform-origin: left;
   transform: scaleX(1);
 }

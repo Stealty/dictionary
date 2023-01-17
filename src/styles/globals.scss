@@ -1,0 +1,13 @@
+@use 'variables';
+
+* {
+  font-family: sans-serif, Arial, Helvetica;
+  color: variables.$primary-color;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: variables.$secondary-color;
+}

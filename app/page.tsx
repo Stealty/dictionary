@@ -1,3 +1,9 @@
+import Paragraph from 'src/components/atoms/Paragraph/Paragraph';
+
 export default function Page() {
-  return <div className="space-y-6">asd</div>;
+  return (
+    <div>
+      <Paragraph text="alowasdasd" />
+    </div>
+  );
 }

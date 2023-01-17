@@ -1,0 +1,11 @@
+$primary-color: #eeeeee;
+$secondary-color: #222831;
+$tertiary-color: #393e46;
+$quaternary-color: #00adb5;
+
+:export {
+  primaryColor: $primary-color;
+  secondaryColor: $secondary-color;
+  tertiaryColor: $tertiary-color;
+  quaternaryColor: $quaternary-color;
+}
